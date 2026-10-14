@@ -1,0 +1,294 @@
+Command: C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe C:\esp\v6.1\esp-idf\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\ACER\.gemini\antigravity-ide\smart_dual_camera_access_idf2\master_esp32s3\build\master_esp32s3.elf C:\Users\ACER\.gemini\antigravity-ide\smart_dual_camera_access_idf2\master_esp32s3\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe' 'C:\esp\v6.1\esp-idf\tools\idf.py' '-p' 'COM4'
+[0;32mI (127) esp_image: segment 1: paddr=000495d4 vaddr=3fc9c600 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200ad71
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1664
+load:0x403c8700,len:0xf7c
+load:0x403cb700,len:0x31ec
+entry 0x403c892c
+[0;32mI (24) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2026 08:39:51[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.4[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00400000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=395ach (234924) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=000495d4 vaddr=3fc9c600 size=06a44h ( 27204) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=bd87ch (776316) map[0m
+[0;32mI (253) esp_image: segment 3: paddr=0010d8a4 vaddr=3fca3044 size=012a8h (  4776) load[0m
+[0;32mI (254) esp_image: segment 4: paddr=0010eb54 vaddr=40374000 size=184f8h ( 99576) load[0m
+[0;32mI (276) esp_image: segment 5: paddr=00127054 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (288) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (288) boot: Disabling RNG early entropy source...[0m
+[0;32mI (298) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (298) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (298) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (300) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (304) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (309) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (313) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (318) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (323) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (327) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (332) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (337) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (341) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (344) esp_psram: Speed: 80MHz[0m
+[0;32mI (347) cpu_start: Multicore app[0m
+[0;32mI (783) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (791) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (792) cpu_start: Pro cpu start user code[0m
+[0;32mI (792) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (793) app_init: Application information:[0m
+[0;32mI (797) app_init: Project name:     master_esp32s3[0m
+[0;32mI (802) app_init: App version:      1[0m
+[0;32mI (805) app_init: Compile time:     Sep 25 2026 08:39:34[0m
+[0;32mI (810) app_init: ELF file SHA256:  7a9d95008...[0m
+[0;32mI (814) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (818) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (822) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (826) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (830) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (836) heap_init: At 3FCA99E0 len 0003FD30 (255 KiB): RAM[0m
+[0;32mI (841) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (846) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (852) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (857) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (864) spi_flash: detected chip: boya[0m
+[0;32mI (867) spi_flash: flash io: qio[0m
+[0;32mI (870) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (876) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (883) main_task: Started on CPU0[0m
+[0;32mI (883) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (893) main_task: Calling app_main()[0m
+[0;32mI (913) MASTER_ESP32S3: Khởi tạo PIR (GPIO14) và Relay (GPIO1) thành công[0m
+[0;32mI (1103) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1103) cam_hal: cam init ok[0m
+[0;32mI (1103) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1103) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1113) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1113) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1113) camera: Detected OV5640 camera[0m
+[0;32mI (1113) camera: Detected camera at address=0x3c[0m
+[0;32mI (1793) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1793) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 11[0m
+[0;32mI (1793) cam_hal: Allocating 11520 Byte frame buffer in PSRAM[0m
+[0;32mI (1793) cam_hal: Allocating 11520 Byte frame buffer in PSRAM[0m
+[0;32mI (1803) cam_hal: cam config ok[0m
+[0;32mI (1813) ov5640: Set PLL: bypass: 0, multiplier: 160, sys_div: 4, pre_div: 2, root_2x: 0, pclk_root_div: 2, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (1823) ov5640: Calculated XVCLK: 20000000 Hz, REFIN: 10000000 Hz, VCO: 1600000000 Hz, PLL_CLK: 160000000 Hz, SYSCLK: 40000000 Hz, PCLK: 10000000 Hz[0m
+[0;32mI (1873) MASTER_ESP32S3: Camera OV5640 đã khởi tạo chuẩn 240x240 và tối ưu[0m
+[0;32mI (1873) pp: pp rom version: e7ae62f[0m
+[0;32mI (1873) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1883) wifi:wifi driver task: 3fcee8d8, prio:23, stack:6656, core=0[0m
+[0;32mI (1893) wifi:wifi firmware version: e12a754[0m
+[0;32mI (1893) wifi:wifi certification version: v7.0[0m
+[0;32mI (1893) wifi:config NVS flash: enabled[0m
+[0;32mI (1893) wifi:config nano formatting: disabled[0m
+[0;32mI (1903) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1903) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1903) wifi:Init management short buffer num: 32[0m
+[0;32mI (1913) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1913) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1923) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1923) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1933) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1933) wifi_init: rx ba win: 6[0m
+[0;32mI (1933) wifi_init: accept mbox: 6[0m
+[0;32mI (1943) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1943) wifi_init: udp mbox: 6[0m
+[0;32mI (1943) wifi_init: tcp mbox: 6[0m
+[0;32mI (1943) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1953) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1953) wifi_init: tcp mss: 1440[0m
+[0;32mI (1953) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1963) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1963) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (2023) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (2063) wifi:mode : sta (e0:72:a1:da:20:74)[0m
+[0;32mI (2063) wifi:enable tsf[0m
+[0;32mI (2063) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (2063) main_task: Returned from app_main()[0m
+[0;32mI (2133) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2133) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2133) MASTER_ESP32S3: Access Control Task sẵn sàng. Chờ PIR phát hiện chuyển động...[0m
+[0;32mI (3133) wifi:state: auth -> init (0x200)[0m
+[0;32mI (5433) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5593) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5873) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5973) wifi:<ba-add>idx:0 (ifx:0, 24:0b:2a:5c:9f:29), tid:5, ssn:0, winSize:64[0m
+[0;32mI (6033) wifi:<ba-add>idx:1 (ifx:0, 24:0b:2a:5c:9f:29), tid:0, ssn:1, winSize:64[0m
+[0;32mI (6063) wifi:connected with WIFI, aid = 8, channel 9, BW20, bssid = 24:0b:2a:5c:9f:29[0m
+[0;32mI (6063) wifi:security: WPA2-PSK, phy: bgn, rssi: -64, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (6083) wifi:pm start, type: 1[0m
+
+[0;32mI (6083) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (6083) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (6123) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (8233) esp_netif_handlers: sta ip: 192.168.1.5, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (8233) MASTER_ESP32S3: Master đã kết nối WiFi! IP: 192.168.1.5[0m
+[0;32mI (36743) MASTER_ESP32S3: >>> [PIR] Phát hiện người -> BẬT MÀN HÌNH TFT (Bộ đếm: 5 phút) <<<[0m
+[0;32mI (36743) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (39253) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (59413) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (59413) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_58551[0m
+[0;32mI (60723) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_58551[0m
+[0;33mW (123223) transport_base: Poll timeout or error, errno=Connection already in progress, fd=54, timeout_ms=30000[0m
+[1;31mE (123223) MASTER_ESP32S3: Lỗi kết nối Server: ESP_ERR_HTTP_WRITE_DATA[0m
+[0;32mI (170093) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (170093) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (172603) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (192643) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (192643) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_191781[0m
+[0;32mI (193483) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_191781[0m
+[0;32mI (193833) MASTER_ESP32S3: Server Response: {"status":"UNLOCK","session_id":"SES_191781","user_name":"đạt","confidence":0.4027450693574792,"primary_camera":"Master (Trực diện)","master_confidence":0.4027450693574792,"slave_confidence":0.0,"message":"Xác thực thành công (Master (Trực diện)): đạt (Độ tin cậy: 0.403 >= 0.363) [Master: 0.403, Slave: 0.000]"}[0m
+[0;32mI (193853) MASTER_ESP32S3: =================================================[0m
+[0;32mI (193863) MASTER_ESP32S3: >>> [XÁC THỰC THÀNH CÔNG] - đạt (40.3%) <<<[0m
+[0;32mI (193873) MASTER_ESP32S3: >>> [RELAY]: BẬT RELAY (GPIO 1) -> ĐÃ MỞ CỬA! <<<[0m
+[0;32mI (193883) MASTER_ESP32S3: =================================================[0m
+[0;32mI (196893) MASTER_ESP32S3: >>> [RELAY]: TẮT RELAY -> ĐÃ ĐÓNG/KHÓA CỬA LẠI! <<<[0m
+[0;32mI (222493) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (222493) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (225003) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (245023) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (245023) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_244161[0m
+[0;32mI (245743) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_244161[0m
+[0;32mI (245953) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_244161","user_name":"Người lạ (Unknown)","confidence":0.16147978607659752,"primary_camera":"Master (Trực diện)","master_confidence":0.16147978607659752,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.161 < 0.363 [Master: 0.161, Slave: 0.000]"}[0m
+[0;33mW (245973) MASTER_ESP32S3: =================================================[0m
+[0;33mW (245983) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (245993) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (245993) MASTER_ESP32S3: =================================================[0m
+[0;32mI (264413) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (264413) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (266923) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (286993) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (286993) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_286131[0m
+[0;32mI (287743) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_286131[0m
+[0;32mI (287833) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_286131","user_name":"Người lạ (Unknown)","confidence":0.31065309856057866,"primary_camera":"Master (Trực diện)","master_confidence":0.31065309856057866,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.311 < 0.363 [Master: 0.311, Slave: 0.000]"}[0m
+[0;33mW (287853) MASTER_ESP32S3: =================================================[0m
+[0;33mW (287863) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (287873) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (287873) MASTER_ESP32S3: =================================================[0m
+[0;32mI (317393) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (317393) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (319903) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (340013) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (340013) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_339151[0m
+[0;32mI (340713) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_339151","user_name":"Người lạ (Unknown)","confidence":0.1879101643262402,"primary_camera":"Master (Trực diện)","master_confidence":0.1879101643262402,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.188 < 0.363 [Master: 0.188, Slave: 0.000]"}[0m
+[0;33mW (340733) MASTER_ESP32S3: =================================================[0m
+[0;32mI (340743) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_339151[0m
+[0;33mW (340753) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (340763) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (340763) MASTER_ESP32S3: =================================================[0m
+[0;32mI (533183) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (533183) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (535693) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (555733) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (555733) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_554871[0m
+[0;32mI (556573) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_554871[0m
+[0;32mI (556783) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_554871","user_name":"Người lạ (Unknown)","confidence":0.23155489288183162,"primary_camera":"Master (Trực diện)","master_confidence":0.23155489288183162,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.232 < 0.363 [Master: 0.232, Slave: 0.000]"}[0m
+[0;33mW (556803) MASTER_ESP32S3: =================================================[0m
+[0;33mW (556813) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (556823) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (556823) MASTER_ESP32S3: =================================================[0m
+[0;32mI (562043) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (562043) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (564553) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (584713) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (584713) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_583851[0m
+[0;32mI (585533) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_583851","user_name":"Người lạ (Unknown)","confidence":0.3424901087360013,"primary_camera":"Slave (Góc phụ)","master_confidence":0.0,"slave_confidence":0.3424901087360013,"message":"Từ chối truy cập (Slave (Góc phụ)): Độ tin cậy cao nhất 0.342 < 0.363 [Master: 0.000, Slave: 0.342]"}[0m
+[0;33mW (585553) MASTER_ESP32S3: =================================================[0m
+[0;32mI (585563) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_583851[0m
+[0;33mW (585573) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (585573) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (585583) MASTER_ESP32S3: =================================================[0m
+[0;32mI (604503) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (604503) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (607013) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (627083) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (627083) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_626221[0m
+[0;32mI (627813) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_626221[0m
+[0;32mI (628033) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_626221","user_name":"Người lạ (Unknown)","confidence":0.0,"primary_camera":"Master (Trực diện)","master_confidence":0.0,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.000 < 0.363 [Master: 0.000, Slave: 0.000]"}[0m
+[0;33mW (628053) MASTER_ESP32S3: =================================================[0m
+[0;33mW (628063) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (628073) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (628073) MASTER_ESP32S3: =================================================[0m
+[0;32mI (636893) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (636893) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (639403) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (659513) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (659513) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_658651[0m
+[0;32mI (660063) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_658651[0m
+[0;32mI (660283) MASTER_ESP32S3: Server Response: {"status":"UNLOCK","session_id":"SES_658651","user_name":"đạt","confidence":0.36720544685897494,"primary_camera":"Slave (Góc phụ)","master_confidence":0.3240241832463653,"slave_confidence":0.36720544685897494,"message":"Xác thực thành công (Slave (Góc phụ)): đạt (Độ tin cậy: 0.367 >= 0.363) [Master: 0.324, Slave: 0.367]"}[0m
+[0;32mI (660303) MASTER_ESP32S3: =================================================[0m
+[0;32mI (660313) MASTER_ESP32S3: >>> [XÁC THỰC THÀNH CÔNG] - đạt (36.7%) <<<[0m
+[0;32mI (660323) MASTER_ESP32S3: >>> [RELAY]: BẬT RELAY (GPIO 1) -> ĐÃ MỞ CỬA! <<<[0m
+[0;32mI (660323) MASTER_ESP32S3: =================================================[0m
+[0;32mI (663343) MASTER_ESP32S3: >>> [RELAY]: TẮT RELAY -> ĐÃ ĐÓNG/KHÓA CỬA LẠI! <<<[0m
+[0;32mI (872743) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (872743) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (875253) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (895293) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (895293) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_894431[0m
+[0;32mI (896123) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_894431[0m
+[0;32mI (896373) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_894431","user_name":"Người lạ (Unknown)","confidence":0.22130412179194536,"primary_camera":"Master (Trực diện)","master_confidence":0.22130412179194536,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.221 < 0.363 [Master: 0.221, Slave: 0.000]"}[0m
+[0;33mW (896403) MASTER_ESP32S3: =================================================[0m
+[0;33mW (896403) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (896413) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (896423) MASTER_ESP32S3: =================================================[0m
+[0;32mI (910033) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (910033) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (912543) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (932593) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (932593) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_931731[0m
+[0;32mI (933663) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_931731[0m
+[0;32mI (933843) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_931731","user_name":"Người lạ (Unknown)","confidence":0.21006185549777,"primary_camera":"Master (Trực diện)","master_confidence":0.21006185549777,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.210 < 0.363 [Master: 0.210, Slave: 0.000]"}[0m
+[0;33mW (933863) MASTER_ESP32S3: =================================================[0m
+[0;33mW (933873) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (933883) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (933883) MASTER_ESP32S3: =================================================[0m
+[0;32mI (1060303) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (1060303) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (1062813) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (1082923) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (1087133) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_1082061","user_name":"Người lạ (Unknown)","confidence":0.08937417823608484,"primary_camera":"Master (Trực diện)","master_confidence":0.08937417823608484,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.089 < 0.363 [Master: 0.089, Slave: 0.000]"}[0m
+[0;33mW (1087153) MASTER_ESP32S3: =================================================[0m
+[0;33mW (1087163) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (1087173) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (1087173) MASTER_ESP32S3: =================================================[0m
+[0;32mI (1374593) MASTER_ESP32S3: >>> [PIR TIMEOUT] Quá 5 phút không có chuyển động -> Tắt màn hình TFT <<<[0m
+[0;32mI (1791963) MASTER_ESP32S3: >>> [PIR] Phát hiện người -> BẬT MÀN HÌNH TFT (Bộ đếm: 5 phút) <<<[0m
+[0;32mI (1791963) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (1794473) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (1814483) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (1818923) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_1813621","user_name":"Người lạ (Unknown)","confidence":0.0,"primary_camera":"Master (Trực diện)","master_confidence":0.0,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.000 < 0.363 [Master: 0.000, Slave: 0.000]"}[0m
+[0;33mW (1818953) MASTER_ESP32S3: =================================================[0m
+[0;33mW (1818953) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (1818963) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (1818973) MASTER_ESP32S3: =================================================[0m
+[0;32mI (1823083) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (1823083) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (1825593) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (1845603) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (1849693) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_1844741","user_name":"Người lạ (Unknown)","confidence":0.0,"primary_camera":"Master (Trực diện)","master_confidence":0.0,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.000 < 0.363 [Master: 0.000, Slave: 0.000]"}[0m
+[0;33mW (1849713) MASTER_ESP32S3: =================================================[0m
+[0;33mW (1849723) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (1849733) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (1849743) MASTER_ESP32S3: =================================================[0m
+[0;32mI (2130153) MASTER_ESP32S3: >>> [PIR TIMEOUT] Quá 5 phút không có chuyển động -> Tắt màn hình TFT <<<[0m
+[0;32mI (2314223) MASTER_ESP32S3: >>> [PIR] Phát hiện người -> BẬT MÀN HÌNH TFT (Bộ đếm: 5 phút) <<<[0m
+[0;32mI (2314223) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (2316733) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m

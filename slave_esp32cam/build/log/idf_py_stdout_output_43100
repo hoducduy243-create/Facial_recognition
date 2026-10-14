@@ -1,0 +1,267 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\ESP32_Projects\smart_dual_camera_access_idf2\slave_esp32cam\build\slave_esp32cam.elf D:\ESP32_Projects\smart_dual_camera_access_idf2\slave_esp32cam\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM6'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),b�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15876
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 13 2026 18:26:01[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=387e0h (231392) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00048808 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00048830 vaddr=3ffb0000 size=067a0h ( 26528) load[0m
+[0;32mI (165) esp_image: segment 3: paddr=0004efd8 vaddr=40080000 size=01040h (  4160) load[0m
+[0;32mI (167) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b8ccch (756940) map[0m
+[0;32mI (385) esp_image: segment 5: paddr=00108cf4 vaddr=40081040 size=1b54ch (111948) load[0m
+[0;32mI (437) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (437) boot: Disabling RNG early entropy source...[0m
+[0;32mI (447) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (448) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (448) esp_psram: Speed: 40MHz[0m
+[0;32mI (448) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (454) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (463) cpu_start: Multicore app[0m
+[0;32mI (1370) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1378) cpu_start: Pro cpu start user code[0m
+[0;32mI (1378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1378) app_init: Application information:[0m
+[0;32mI (1378) app_init: Project name:     slave_esp32cam[0m
+[0;32mI (1383) app_init: App version:      1[0m
+[0;32mI (1386) app_init: Compile time:     Oct 13 2026 18:24:40[0m
+[0;32mI (1391) app_init: ELF file SHA256:  ad48add12...[0m
+[0;32mI (1396) app_init: ESP-IDF:          v5.5[0m
+[0;32mI (1400) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1403) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1408) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1412) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1418) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1423) heap_init: At 3FFBB820 len 000247E0 (145 KiB): DRAM[0m
+[0;32mI (1428) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1434) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1439) heap_init: At 4009C58C len 00003A74 (14 KiB): IRAM[0m
+[0;32mI (1445) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;33mW (1452) spi_flash: boya detected but related driver is not linked, please check option `SPI_FLASH_SUPPORT_BOYA_CHIP`[0m
+[0;32mI (1462) spi_flash: detected chip: generic[0m
+[0;32mI (1465) spi_flash: flash io: dio[0m
+[0;32mI (1469) main_task: Started on CPU0[0m
+[0;32mI (1479) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1479) main_task: Calling app_main()[0m
+[0;32mI (1509) SLAVE_ESP32CAM: Khởi động Slave ESP32-CAM...[0m
+[0;32mI (1509) cam_hal: cam init ok[0m
+[0;32mI (1509) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1509) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1539) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1539) camera: Detected OV3660 camera[0m
+[0;32mI (1539) camera: Detected camera at address=0x3c[0m
+[0;32mI (1849) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1849) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 23[0m
+[0;32mI (1849) cam_hal: Allocating 96000 Byte frame buffer in PSRAM[0m
+[0;32mI (1849) cam_hal: cam config ok[0m
+[0;32mI (1869) ov3660: Calculated VCO: 200000000 Hz, PLLCLK: 200000000 Hz, SYSCLK: 50000000 Hz, PCLK: 10000000 Hz[0m
+[0;32mI (1909) SLAVE_ESP32CAM: Camera da khoi tao va toi uu[0m
+[0;32mI (1919) wifi:wifi driver task: 3ffc5f8c, prio:23, stack:6656, core=0[0m
+[0;32mI (1929) wifi:wifi firmware version: f3dbad7[0m
+[0;32mI (1929) wifi:wifi certification version: v7.0[0m
+[0;32mI (1929) wifi:config NVS flash: enabled[0m
+[0;32mI (1929) wifi:config nano formatting: disabled[0m
+[0;32mI (1929) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1939) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1939) wifi:Init management short buffer num: 32[0m
+[0;32mI (1949) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1949) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1959) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1959) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1969) wifi_init: rx ba win: 6[0m
+[0;32mI (1969) wifi_init: accept mbox: 6[0m
+[0;32mI (1969) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1969) wifi_init: udp mbox: 6[0m
+[0;32mI (1979) wifi_init: tcp mbox: 6[0m
+[0;32mI (1979) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1979) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1989) wifi_init: tcp mss: 1440[0m
+[0;32mI (1989) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1989) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1999) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+cam_hal: Guru Meditation Error: Core  0 panic'ed (Cache error). 
+Cache disabled but cached memory region accessed
+
+Core  0 register dump:
+PC      : 0x40008047  PS      : 0x00060034  A0      : 0x800852c0  A1      : 0x3ffb2000  
+A2      : 0x3ffb2913  A3      : 0x00000009  A4      : 0x000000ad  A5      : 0x00000000  
+A6      : 0x00000000  A7      : 0x00000000  A8      : 0x00000008  A9      : 0x3f4083c4  
+A10     : 0x00000078  A11     : 0x00000009  A12     : 0x3ffc5b10  A13     : 0x00060023  
+A14     : 0x3ffb4c54  A15     : 0x0000cdcd  SAR     : 0x0000001d  EXCCAUSE: 0x00000007  
+EXCVADDR: 0x00000000  LBEG    : 0x4008aa12  LEND    : 0x4008aa1d  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40008044:0x3ffb2000 0x400852bd:0x3ffb2090 0x400853be:0x3ffb20c0 0x400857a5:0x3ffb20f0 0x4009168e:0x3ffc5a10 0x400916c1:0x3ffc5a40 0x4009ae9f:0x3ffc5a80 0x4009baf7:0x3ffc5ac0 0x4009bb45:0x3ffc5ae0 0x4009baad:0x3ffc5b10 0x4009b682:0x3ffc5b40 0x4009aa69:0x3ffc5bc0 0x40139d75:0x3ffc5c10 0x400ed55b:0x3ffc5c30 0x400eb29e:0x3ffc5c50 0x400eb615:0x3ffc5c70 0x400ecdbb:0x3ffc5ce0 0x400ed055:0x3ffc5d60 0x400ed319:0x3ffc5de0 0x400ead0b:0x3ffc5e00 0x40123bbd:0x3ffc5e30 0x40125bfa:0x3ffc5e50 0x40127ff5:0x3ffc5e80 0x40125566:0x3ffc5eb0 0x400964c1:0x3ffc5ed0 0x4008dad5:0x3ffc5f00
+
+
+
+
+ELF file SHA256: ad48add12
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15876
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (28) boot: ESP-IDF v5.5 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Oct 13 2026 18:26:01[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=387e0h (231392) map[0m
+[0;32mI (153) esp_image: segment 1: paddr=00048808 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=00048830 vaddr=3ffb0000 size=067a0h ( 26528) load[0m
+[0;32mI (165) esp_image: segment 3: paddr=0004efd8 vaddr=40080000 size=01040h (  4160) load[0m
+[0;32mI (166) esp_image: segment 4: paddr=00050020 vaddr=400d0020 size=b8ccch (756940) map[0m
+[0;32mI (385) esp_image: segment 5: paddr=00108cf4 vaddr=40081040 size=1b54ch (111948) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (447) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (448) esp_psram: Speed: 40MHz[0m
+[0;32mI (448) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (454) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (462) cpu_start: Multicore app[0m
+[0;32mI (1369) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1377) cpu_start: Pro cpu start user code[0m
+[0;32mI (1377) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1377) app_init: Application information:[0m
+[0;32mI (1378) app_init: Project name:     slave_esp32cam[0m
+[0;32mI (1382) app_init: App version:      1[0m
+[0;32mI (1386) app_init: Compile time:     Oct 13 2026 18:24:40[0m
+[0;32mI (1391) app_init: ELF file SHA256:  ad48add12...[0m
+[0;32mI (1395) app_init: ESP-IDF:          v5.5[0m
+[0;32mI (1399) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1403) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1407) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1411) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1417) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1423) heap_init: At 3FFBB820 len 000247E0 (145 KiB): DRAM[0m
+[0;32mI (1428) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1433) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1439) heap_init: At 4009C58C len 00003A74 (14 KiB): IRAM[0m
+[0;32mI (1445) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;33mW (1452) spi_flash: boya detected but related driver is not linked, please check option `SPI_FLASH_SUPPORT_BOYA_CHIP`[0m
+[0;32mI (1461) spi_flash: detected chip: generic[0m
+[0;32mI (1465) spi_flash: flash io: dio[0m
+[0;32mI (1469) main_task: Started on CPU0[0m
+[0;32mI (1479) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1479) main_task: Calling app_main()[0m
+[0;32mI (1509) SLAVE_ESP32CAM: Khởi động Slave ESP32-CAM...[0m
+[0;32mI (1509) cam_hal: cam init ok[0m
+[0;32mI (1519) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1519) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1549) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1549) camera: Detected OV3660 camera[0m
+[0;32mI (1549) camera: Detected camera at address=0x3c[0m
+[0;32mI (1859) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1859) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 23[0m
+[0;32mI (1859) cam_hal: Allocating 96000 Byte frame buffer in PSRAM[0m
+[0;32mI (1859) cam_hal: cam config ok[0m
+[0;32mI (1879) ov3660: Calculated VCO: 200000000 Hz, PLLCLK: 200000000 Hz, SYSCLK: 50000000 Hz, PCLK: 10000000 Hz[0m
+[0;32mI (1919) SLAVE_ESP32CAM: Camera da khoi tao va toi uu[0m
+[0;32mI (1929) wifi:wifi driver task: 3ffc5f8c, prio:23, stack:6656, core=0[0m
+[0;32mI (1939) wifi:wifi firmware version: f3dbad7[0m
+[0;32mI (1939) wifi:wifi certification version: v7.0[0m
+[0;32mI (1939) wifi:config NVS flash: enabled[0m
+[0;32mI (1939) wifi:config nano formatting: disabled[0m
+[0;32mI (1939) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1949) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1949) wifi:Init management short buffer num: 32[0m
+[0;32mI (1959) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1959) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1969) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1969) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1979) wifi_init: rx ba win: 6[0m
+[0;32mI (1979) wifi_init: accept mbox: 6[0m
+[0;32mI (1979) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1979) wifi_init: udp mbox: 6[0m
+[0;32mI (1989) wifi_init: tcp mbox: 6[0m
+[0;32mI (1989) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1989) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1999) wifi_init: tcp mss: 1440[0m
+[0;32mI (1999) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1999) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (2009) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (2039) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (2119) wifi:mode : sta (b0:cb:d8:c0:7d:04)[0m
+[0;32mI (2119) wifi:enable tsf[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker missing
+[0;32mI (2119) SLAVE_ESP32CAM: Đang bắt đầu kết nối tới SSID: hutea ...[0m
+[0;32mI (2129) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (2129) main_task: Returned from app_main()[0m
+[0;32mI (2399) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2409) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2429) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2439) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2479) wifi:connected with hutea, aid = 77, channel 6, BW20, bssid = e0:5d:54:b9:bc:66[0m
+[0;32mI (2479) wifi:security: WPA2-PSK, phy: bgn, rssi: -80[0m
+[0;32mI (2489) wifi:pm start, type: 1[0m
+
+[0;32mI (2489) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2509) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2929) wifi:<ba-add>idx:0 (ifx:0, e0:5d:54:b9:bc:66), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3959) esp_netif_handlers: sta ip: 192.168.1.112, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3959) SLAVE_ESP32CAM: >>> ĐÃ KẾT NỐI WIFI THÀNH CÔNG! IP: 192.168.1.112 <<<[0m
+[0;32mI (59449) wifi:<ba-add>idx:1 (ifx:0, e0:5d:54:b9:bc:66), tid:7, ssn:5, winSize:64[0m
+[0;32mI (96079) SLAVE_ESP32CAM: [ESP-NOW] Nhan lenh CAPTURE - Session: SES_33831[0m
+[0;32mI (96429) SLAVE_ESP32CAM: Slave captured: 800x600, JPEG = 57670 bytes[0m
+[1;31mE (114679) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (114679) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (114679) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (114679) SLAVE_ESP32CAM: Upload Slave that bai! ESP=ESP_ERR_HTTP_CONNECT, HTTP=0[0m
+[0;32mI (213209) SLAVE_ESP32CAM: [ESP-NOW] Nhan lenh CAPTURE - Session: SES_151001[0m
+[0;32mI (213539) SLAVE_ESP32CAM: Slave captured: 800x600, JPEG = 64624 bytes[0m
+[0;33mW (213989) HTTP_CLIENT: This request requires authentication, but does not provide header information for that[0m
+[1;31mE (213989) HTTP_CLIENT: Error response[0m
+[1;31mE (213989) SLAVE_ESP32CAM: Upload Slave that bai! ESP=ESP_ERR_NOT_SUPPORTED, HTTP=401[0m
+[0;32mI (242519) SLAVE_ESP32CAM: [ESP-NOW] Nhan lenh CAPTURE - Session: SES_179911[0m
+[0;32mI (242849) SLAVE_ESP32CAM: Slave captured: 800x600, JPEG = 61750 bytes[0m
+[0;33mW (243279) HTTP_CLIENT: This request requires authentication, but does not provide header information for that[0m
+[1;31mE (243279) HTTP_CLIENT: Error response[0m
+[1;31mE (243279) SLAVE_ESP32CAM: Upload Slave that bai! ESP=ESP_ERR_NOT_SUPPORTED, HTTP=401[0m
+[0;32mI (271489) SLAVE_ESP32CAM: [ESP-NOW] Nhan lenh CAPTURE - Session: SES_209281[0m
+[0;32mI (271839) SLAVE_ESP32CAM: Slave captured: 800x600, JPEG = 64586 bytes[0m
+[0;33mW (272079) HTTP_CLIENT: This request requires authentication, but does not provide header information for that[0m
+[1;31mE (272079) HTTP_CLIENT: Error response[0m
+[1;31mE (272079) SLAVE_ESP32CAM: Upload Slave that bai! ESP=ESP_ERR_NOT_SUPPORTED, HTTP=401[0m

@@ -1,0 +1,2 @@
+source D:/ESP32_Projects/smart_dual_camera_access_idf2/master_esp32s3/build/gdbinit/symbols
+source D:/ESP32_Projects/smart_dual_camera_access_idf2/master_esp32s3/build/gdbinit/connect

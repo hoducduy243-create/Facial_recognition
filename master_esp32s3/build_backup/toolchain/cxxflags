@@ -1,0 +1,7 @@
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+-mdisable-hardware-atomics
+"-specs=C:/Users/ACER/.gemini/antigravity-ide/smart_dual_camera_access_idf2/master_esp32s3/build/specs/picolibc.specs"
+-fno-rtti

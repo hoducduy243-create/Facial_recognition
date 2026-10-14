@@ -1,0 +1,39 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\ESP32_Projects\smart_dual_camera_access_idf2\slave_esp32cam\build\slave_esp32cam.elf D:\ESP32_Projects\smart_dual_camera_access_idf2\slave_esp32cam\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM6'
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- NOTE: Using \\.\COM6 instead...
+--- esp-idf-monitor 1.10.0 on \\.\COM6 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+--- 0x40080400: _invalid_pc_placeholder at C:/Espressif/frameworks/esp-idf-v5.5/components/xtensa/xtensa_vectors.S:2235
+--- 0x40080638: call_start_cpu0 at C:/Espressif/frameworks/esp-idf-v5.5/components/bootloader/subproject/main/bootloader_start.c:25
+--- 0x40008047: ets_printf in ROM
+--- 0x4008aa12: memset at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/memset.S:150
+--- 0x4008aa1d: memset at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/memset.S:160
+--- 0x40008044: ets_printf in ROM
+--- 0x400852bd: ll_cam_send_event at D:/ESP32_Projects/smart_dual_camera_access_idf2/slave_esp32cam/managed_components/espressif__esp32-camera/driver/cam_hal.c:259
+--- 0x400853be: ll_cam_dma_isr at D:/ESP32_Projects/smart_dual_camera_access_idf2/slave_esp32cam/managed_components/espressif__esp32-camera/target/esp32/ll_cam.c:243
+--- 0x400857a5: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.5/components/xtensa/xtensa_vectors.S:1240
+--- 0x4009168e: spi_flash_ll_set_mosi_bitlen at C:/Espressif/frameworks/esp-idf-v5.5/components/hal/esp32/include/hal/spi_flash_ll.h:313(inlined by) spi_flash_hal_configure_host_io_mode at C:/Espressif/frameworks/esp-idf-v5.5/components/hal/spi_flash_hal_common.inc:167
+--- 0x400916c1: spi_flash_hal_common_command at C:/Espressif/frameworks/esp-idf-v5.5/components/hal/spi_flash_hal_common.inc:192
+--- 0x4009ae9f: memspi_host_read_status_hs at C:/Espressif/frameworks/esp-idf-v5.5/components/spi_flash/memspi_host_driver.c:124
+--- 0x4009baf7: spi_flash_chip_generic_read_reg at C:/Espressif/frameworks/esp-idf-v5.5/components/spi_flash/spi_flash_chip_generic.c:342
+--- 0x4009bb45: spi_flash_chip_generic_wait_idle at C:/Espressif/frameworks/esp-idf-v5.5/components/spi_flash/spi_flash_chip_generic.c:402
+--- 0x4009baad: spi_flash_chip_generic_set_write_protect at C:/Espressif/frameworks/esp-idf-v5.5/components/spi_flash/spi_flash_chip_generic.c:311
+--- 0x4009b682: spi_flash_chip_generic_write at C:/Espressif/frameworks/esp-idf-v5.5/components/spi_flash/spi_flash_chip_generic.c:293
+--- 0x4009aa69: esp_flash_write at C:/Espressif/frameworks/esp-idf-v5.5/components/spi_flash/esp_flash_api.c:1078
+--- 0x40139d75: esp_partition_write at C:/Espressif/frameworks/esp-idf-v5.5/components/esp_partition/partition_target.c:78
+--- 0x400ed55b: nvs::NVSPartition::write(unsigned int, void const*, unsigned int) at C:/Espressif/frameworks/esp-idf-v5.5/components/nvs_flash/src/nvs_partition.cpp:51
+--- 0x400eb29e: nvs::Page::writeEntry(nvs::Item const&) at C:/Espressif/frameworks/esp-idf-v5.5/components/nvs_flash/src/nvs_page.cpp:106
+--- 0x400eb615: nvs::Page::writeItem(unsigned char, nvs::ItemType, char const*, void const*, unsigned int, unsigned char) at C:/Espressif/frameworks/esp-idf-v5.5/components/nvs_flash/src/nvs_page.cpp:243
+--- 0x400ecdbb: nvs::Storage::writeMultiPageBlob(unsigned char, char const*, void const*, unsigned int, nvs::VerOffset) at C:/Espressif/frameworks/esp-idf-v5.5/components/nvs_flash/src/nvs_storage.cpp:321
+--- 0x400ed055: nvs::Storage::writeItem(unsigned char, nvs::ItemType, char const*, void const*, unsigned int) at C:/Espressif/frameworks/esp-idf-v5.5/components/nvs_flash/src/nvs_storage.cpp:488
+--- 0x400ed319: nvs::NVSHandleSimple::set_blob(char const*, void const*, unsigned int) at C:/Espressif/frameworks/esp-idf-v5.5/components/nvs_flash/src/nvs_handle_simple.cpp:44
+--- 0x400ead0b: nvs_set_blob at C:/Espressif/frameworks/esp-idf-v5.5/components/nvs_flash/src/nvs_api.cpp:444
+--- 0x40123bbd: wifi_nvs_set at ??:?
+--- 0x40125bfa: map_wifi_config_sae_pwe_to_supp at ??:?
+--- 0x40127ff5: wifi_set_config_process at ??:?
+--- 0x40125566: ieee80211_ioctl_process at ??:?
+--- 0x400964c1: ppTask at ??:?
+--- 0x4008dad5: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+--- 0x40080400: _invalid_pc_placeholder at C:/Espressif/frameworks/esp-idf-v5.5/components/xtensa/xtensa_vectors.S:2235
+--- 0x40080638: call_start_cpu0 at C:/Espressif/frameworks/esp-idf-v5.5/components/bootloader/subproject/main/bootloader_start.c:25
+

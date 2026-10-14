@@ -1,0 +1,2 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 D:\ESP32_Projects\smart_dual_camera_access_idf2\slave_esp32cam
+info: Trying to set symbol COMPILER_ORPHAN_SECTIONS_WARNING to n, but it is currently selected by choice COMPILER_ORPHAN_SECTIONS. For setting it to n, set another choice symbol to y instead.

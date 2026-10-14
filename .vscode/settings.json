@@ -1,0 +1,14 @@
+{
+  "idf.currentSetup": "c:\\New folder\\v5.5.1\\esp-idf",
+  "idf.customExtraVars": {},
+  "clangd.path": "C:\\Users\\ACER\\.espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=c:\\Esp32-cam project\\smart_dual_camera_access_idf\\build"
+  ],
+  "cmake.sourceDirectory": "C:/Esp32-cam project/smart_dual_camera_access_idf/master_esp32s3",
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ]
+}

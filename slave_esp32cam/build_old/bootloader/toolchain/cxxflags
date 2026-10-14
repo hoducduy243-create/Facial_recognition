@@ -1,0 +1,7 @@
+"-specs=C:/Users/ACER/.gemini/antigravity-ide/smart_dual_camera_access_idf2/slave_esp32cam/build/bootloader/specs/picolibc.specs"
+-Wno-frame-address
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+-fno-rtti

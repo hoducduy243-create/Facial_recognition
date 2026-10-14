@@ -1,0 +1,310 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\ESP32_Projects\smart_dual_camera_access_idf2\master_esp32s3\build\master_esp32s3.elf D:\ESP32_Projects\smart_dual_camera_access_idf2\master_esp32s3\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'COM3'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200b265
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1710
+load:0x403c8700,len:0xec0
+load:0x403cb700,len:0x31d4
+entry 0x403c894c
+[0;32mI (24) boot: ESP-IDF v5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 13 2026 18:14:50[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.4[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00400000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=379d4h (227796) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=000479fc vaddr=3fc9e500 size=076e4h ( 30436) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0004f0e8 vaddr=40374000 size=00f30h (  3888) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=bc6dch (771804) map[0m
+[0;32mI (250) esp_image: segment 4: paddr=0010c704 vaddr=40374f30 size=19524h (103716) load[0m
+[0;32mI (270) esp_image: segment 5: paddr=00125c30 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (281) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (282) boot: Disabling RNG early entropy source...[0m
+[0;32mI (292) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (292) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (292) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (294) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (298) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (303) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (307) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (312) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (316) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (321) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (326) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (331) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (335) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (339) esp_psram: Speed: 80MHz[0m
+[0;32mI (341) cpu_start: Multicore app[0m
+[0;32mI (777) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (786) cpu_start: Pro cpu start user code[0m
+[0;32mI (786) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (786) app_init: Application information:[0m
+[0;32mI (786) app_init: Project name:     master_esp32s3[0m
+[0;32mI (790) app_init: App version:      1[0m
+[0;32mI (794) app_init: Compile time:     Oct 13 2026 18:13:47[0m
+[0;32mI (799) app_init: ELF file SHA256:  f852f8cd2...[0m
+[0;32mI (803) app_init: ESP-IDF:          v5.5[0m
+[0;32mI (807) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (810) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (814) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (818) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (825) heap_init: At 3FCAAE38 len 0003E8D8 (250 KiB): RAM[0m
+[0;32mI (830) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (835) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (840) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (846) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (853) spi_flash: detected chip: boya[0m
+[0;32mI (855) spi_flash: flash io: qio[0m
+[0;32mI (859) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (865) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (872) main_task: Started on CPU0[0m
+[0;32mI (882) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (882) main_task: Calling app_main()[0m
+[0;32mI (902) MASTER_ESP32S3: Khởi tạo PIR (GPIO14) và Relay (GPIO1) thành công[0m
+[0;32mI (1082) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1082) cam_hal: cam init ok[0m
+[0;32mI (1082) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1082) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1092) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1092) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1092) camera: Detected OV5640 camera[0m
+[0;32mI (1092) camera: Detected camera at address=0x3c[0m
+[0;32mI (1782) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1782) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 11[0m
+[0;32mI (1782) cam_hal: Allocating 11520 Byte frame buffer in PSRAM[0m
+[0;32mI (1782) cam_hal: Allocating 11520 Byte frame buffer in PSRAM[0m
+[0;32mI (1792) cam_hal: cam config ok[0m
+[0;32mI (1802) ov5640: Set PLL: bypass: 0, multiplier: 160, sys_div: 4, pre_div: 2, root_2x: 0, pclk_root_div: 2, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (1812) ov5640: Calculated XVCLK: 20000000 Hz, REFIN: 10000000 Hz, VCO: 1600000000 Hz, PLL_CLK: 160000000 Hz, SYSCLK: 40000000 Hz, PCLK: 10000000 Hz[0m
+[0;32mI (1862) MASTER_ESP32S3: Camera OV5640 đã khởi tạo chuẩn 240x240 và tối ưu[0m
+[0;32mI (1862) pp: pp rom version: e7ae62f[0m
+[0;32mI (1862) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1872) wifi:wifi driver task: 3fcbebd0, prio:23, stack:6656, core=0[0m
+[0;32mI (1882) wifi:wifi firmware version: f3dbad7[0m
+[0;32mI (1882) wifi:wifi certification version: v7.0[0m
+[0;32mI (1882) wifi:config NVS flash: enabled[0m
+[0;32mI (1882) wifi:config nano formatting: disabled[0m
+[0;32mI (1882) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1892) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1892) wifi:Init management short buffer num: 32[0m
+[0;32mI (1902) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1902) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1912) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1912) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1912) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1922) wifi_init: rx ba win: 6[0m
+[0;32mI (1922) wifi_init: accept mbox: 6[0m
+[0;32mI (1922) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1932) wifi_init: udp mbox: 6[0m
+[0;32mI (1932) wifi_init: tcp mbox: 6[0m
+[0;32mI (1932) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1942) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1942) wifi_init: tcp mss: 1440[0m
+[0;32mI (1942) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1952) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1952) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1962) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (2002) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (2042) wifi:mode : sta (e0:72:a1:da:20:74)[0m
+[0;32mI (2042) wifi:enable tsf[0m
+[0;32mI (2052) ESPNOW: espnow [version: 2.0] init[0m
+[1;31mE (2052) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2052) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (2052) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[1;31mE (2062) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (2062) wifi:W (2072) MASTER_ESP32S3: [HEARTBEAT] Khong ket noi duoc Server: ESP_ERR_HTTP_CONNECT[0m
+state: init -> auth (0xb0)
+[0;32mI (2062) main_task: Returned from app_main()[0m
+[0;32mI (2102) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2112) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2132) MASTER_ESP32S3: Access Control Task sẵn sàng. Chờ PIR phát hiện chuyển động...[0m
+[0;32mI (2142) wifi:connected with hutea, aid = 18, channel 6, BW20, bssid = e0:5d:54:b9:bc:66[0m
+[0;32mI (2142) wifi:security: WPA2-PSK, phy: bgn, rssi: -65[0m
+[0;32mI (2152) wifi:pm start, type: 1[0m
+
+[0;32mI (2152) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2162) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2192) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2262) wifi:<ba-add>idx:0 (ifx:0, e0:5d:54:b9:bc:66), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3302) esp_netif_handlers: sta ip: 192.168.1.114, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3302) MASTER_ESP32S3: Master đã kết nối WiFi! IP: 192.168.1.114[0m
+[0;32mI (3942) wifi:<ba-add>idx:1 (ifx:0, e0:5d:54:b9:bc:66), tid:7, ssn:8, winSize:64[0m
+[0;32mI (12402) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (22842) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (33082) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (43342) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (53592) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (58532) MASTER_ESP32S3: >>> [PIR] Phát hiện người -> BẬT MÀN HÌNH TFT (Bộ đếm: 5 phút) <<<[0m
+[0;32mI (58532) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (61042) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (63862) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (74102) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (81192) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (84342) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (87142) MASTER_ESP32S3: Server Response: {"status":"DENIED","session_id":"SES_80341","user_name":"Người lạ (Unknown)","confidence":0.0,"primary_camera":"Master (Trực diện)","master_confidence":0.0,"slave_confidence":0.0,"message":"Từ chối truy cập (Master (Trực diện)): Độ tin cậy cao nhất 0.000 < 0.28 [Master: 0.000, Slave: 0.000]"}[0m
+[0;33mW (87162) MASTER_ESP32S3: =================================================[0m
+[0;33mW (87162) MASTER_ESP32S3: >>> [TỪ CHỐI TRUY CẬP] - CẢNH BÁO: NGƯỜI LẠ! <<<[0m
+[0;33mW (87172) MASTER_ESP32S3: >>> [RELAY]: GIỮ NGUYÊN KHÓA CỬA! <<<[0m
+[0;33mW (87182) MASTER_ESP32S3: =================================================[0m
+[0;32mI (94582) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (104842) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (251) esp_image: segment 4: paddr=0010c704 vaddr=40374f30 sizeI (782) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (791) cpu_start: Pro cpu start user code[0m
+[0;32mI (791) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (791) app_init: Application information:[0m
+[0;32mI (791) app_init: Project name:     master_esp32s3[0m
+[0;32mI (795) app_init: App version:      1[0m
+[0;32mI (799) app_init: Compile time:     Oct 13 2026 18:13:47[0m
+[0;32mI (804) app_init: ELF file SHA256:  f852f8cd2...[0m
+[0;32mI (808) app_init: ESP-IDF:          v5.5[0m
+[0;32mI (812) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (816) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (820) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (823) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (830) heap_init: At 3FCAAE38 len 0003E8D8 (250 KiB): RAM[0m
+[0;32mI (835) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (840) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (845) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (851) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (858) spi_flash: detected chip: boya[0m
+[0;32mI (860) spi_flash: flash io: qio[0m
+[0;32mI (864) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (870) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (877) main_task: Started on CPU0[0m
+[0;32mI (887) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (887) main_task: Calling app_main()[0m
+[0;32mI (907) MASTER_ESP32S3: Khởi tạo PIR (GPIO14) và Relay (GPIO1) thành công[0m
+[0;32mI (1087) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1087) cam_hal: cam init ok[0m
+[0;32mI (1087) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1087) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1097) ov3660: Mismatch PID=0x5640[0m
+[0;32mI (1097) camera: Camera PID=0x5640 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1097) camera: Detected OV5640 camera[0m
+[0;32mI (1097) camera: Detected camera at address=0x3c[0m
+[0;32mI (1787) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1787) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 11[0m
+[0;32mI (1787) cam_hal: Allocating 11520 Byte frame buffer in PSRAM[0m
+[0;32mI (1787) cam_hal: Allocating 11520 Byte frame buffer in PSRAM[0m
+[0;32mI (1797) cam_hal: cam config ok[0m
+[0;32mI (1807) ov5640: Set PLL: bypass: 0, multiplier: 160, sys_div: 4, pre_div: 2, root_2x: 0, pclk_root_div: 2, pclk_manual: 1, pclk_div: 4[0m
+[0;32mI (1817) ov5640: Calculated XVCLK: 20000000 Hz, REFIN: 10000000 Hz, VCO: 1600000000 Hz, PLL_CLK: 160000000 Hz, SYSCLK: 40000000 Hz, PCLK: 10000000 Hz[0m
+[0;32mI (1867) MASTER_ESP32S3: Camera OV5640 đã khởi tạo chuẩn 240x240 và tối ưu[0m
+[0;32mI (1867) pp: pp rom version: e7ae62f[0m
+[0;32mI (1867) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1877) wifi:wifi driver task: 3fcbebd0, prio:23, stack:6656, core=0[0m
+[0;32mI (1887) wifi:wifi firmware version: f3dbad7[0m
+[0;32mI (1887) wifi:wifi certification version: v7.0[0m
+[0;32mI (1887) wifi:config NVS flash: enabled[0m
+[0;32mI (1887) wifi:config nano formatting: disabled[0m
+[0;32mI (1887) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1897) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1897) wifi:Init management short buffer num: 32[0m
+[0;32mI (1907) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1907) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1917) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1917) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1917) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1927) wifi_init: rx ba win: 6[0m
+[0;32mI (1927) wifi_init: accept mbox: 6[0m
+[0;32mI (1927) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1937) wifi_init: udp mbox: 6[0m
+[0;32mI (1937) wifi_init: tcp mbox: 6[0m
+[0;32mI (1937) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1947) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1947) wifi_init: tcp mss: 1440[0m
+[0;32mI (1947) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1957) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1957) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1967) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (2007) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (2027) wifi:mode : sta (e0:72:a1:da:20:74)[0m
+[0;32mI (2027) wifi:enable tsf[0m
+[0;32mI (2027) ESPNOW: espnow [version: 2.0] init[0m
+[1;31mE (2027) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2027) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2037) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (2037) MASTER_ESP32S3: [HEARTBEAT] Khong ket noi duoc Server: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (2037) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2057) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2037) main_task: Returned from app_main()[0m
+[0;32mI (2067) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2077) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2107) MASTER_ESP32S3: Access Control Task sẵn sàng. Chờ PIR phát hiện chuyển động...[0m
+[0;32mI (2107) MASTER_ESP32S3: >>> [PIR] Phát hiện người -> BẬT MÀN HÌNH TFT (Bộ đếm: 5 phút) <<<[0m
+[0;32mI (2117) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (2127) wifi:connected with hutea, aid = 18, channel 6, BW20, bssid = e0:5d:54:b9:bc:66[0m
+[0;32mI (2127) wifi:security: WPA2-PSK, phy: bgn, rssi: -61[0m
+[0;32mI (2137) wifi:pm start, type: 1[0m
+
+[0;32mI (2137) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2147) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2187) wifi:<ba-add>idx:0 (ifx:0, e0:5d:54:b9:bc:66), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2207) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3217) esp_netif_handlers: sta ip: 192.168.1.114, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3217) MASTER_ESP32S3: Master đã kết nối WiFi! IP: 192.168.1.114[0m
+[0;32mI (4057) wifi:<ba-add>idx:1 (ifx:0, e0:5d:54:b9:bc:66), tid:7, ssn:8, winSize:64[0m
+[0;32mI (4637) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (12307) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (22547) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (24737) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (24737) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_23881[0m
+[0;32mI (28327) MASTER_ESP32S3: Server Response: {"status":"UNLOCK","session_id":"SES_23881","user_name":"duy","confidence":0.5209944883920343,"primary_camera":"Slave (Góc phụ)","master_confidence":0.32002684580038476,"slave_confidence":0.5209944883920343,"message":"Xác thực thành công (Slave (Góc phụ)): duy (Độ tin cậy: 0.521 >= 0.28) [Master: 0.320, Slave: 0.521]"}[0m
+[0;32mI (28347) MASTER_ESP32S3: =================================================[0m
+[0;32mI (28357) MASTER_ESP32S3: >>> [XÁC THỰC THÀNH CÔNG] - duy (52.1%) <<<[0m
+[0;32mI (28357) MASTER_ESP32S3: >>> [RELAY]: BẬT RELAY (GPIO 1) -> ĐÃ MỞ CỬA! <<<[0m
+[0;32mI (28367) MASTER_ESP32S3: =================================================[0m
+[0;32mI (28377) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_23881[0m
+[0;32mI (31387) MASTER_ESP32S3: >>> [RELAY]: TẮT RELAY -> ĐÃ ĐÓNG/KHÓA CỬA LẠI! <<<[0m
+[0;32mI (32827) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (43047) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (53297) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (63557) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (73807) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (84077) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (94297) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (104547) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (105687) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (105687) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (108197) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (115357) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (125557) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (128257) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (128267) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_127401[0m
+[0;32mI (130897) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_127401[0m
+[0;32mI (131047) MASTER_ESP32S3: Server Response: {"status":"UNLOCK","session_id":"SES_127401","user_name":"duy","confidence":0.5901814686458238,"primary_camera":"Slave (Góc phụ)","master_confidence":0.3515218707200347,"slave_confidence":0.5901814686458238,"message":"Xác thực thành công (Slave (Góc phụ)): duy (Độ tin cậy: 0.590 >= 0.28) [Master: 0.352, Slave: 0.590]"}[0m
+[0;32mI (131077) MASTER_ESP32S3: =================================================[0m
+[0;32mI (131077) MASTER_ESP32S3: >>> [XÁC THỰC THÀNH CÔNG] - duy (59.0%) <<<[0m
+[0;32mI (131087) MASTER_ESP32S3: >>> [RELAY]: BẬT RELAY (GPIO 1) -> ĐÃ MỞ CỬA! <<<[0m
+[0;32mI (131097) MASTER_ESP32S3: =================================================[0m
+[0;32mI (134107) MASTER_ESP32S3: >>> [RELAY]: TẮT RELAY -> ĐÃ ĐÓNG/KHÓA CỬA LẠI! <<<[0m
+[0;32mI (136357) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (143507) MASTER_ESP32S3: [PIR] Quét thấy chuyển động tiếp -> Reset lại bộ đếm 5 phút[0m
+[0;32mI (143507) MASTER_ESP32S3: [UI] Hiển thị thông điệp Chào Mừng & Hướng dẫn 20s...[0m
+[0;32mI (146017) MASTER_ESP32S3: [LIVE PREVIEW] Mở camera live trên ST7789 & đếm ngược 20s...[0m
+[0;32mI (146557) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (157817) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (166047) MASTER_ESP32S3: >>> [CAPTURE] Đã hết 20s! Bắt đầu chụp bằng cả 2 camera... <<<[0m
+[0;32mI (166047) MASTER_ESP32S3: [SLAVE ACK] Slave đã nhận lệnh CAPTURE - Session: SES_165191[0m
+[0;32mI (166907) MASTER_ESP32S3: [SLAVE ACK] Slave upload thành công - Session: SES_165191[0m
+[0;32mI (167047) MASTER_ESP32S3: Server Response: {"status":"UNLOCK","session_id":"SES_165191","user_name":"duy","confidence":0.5801504215955902,"primary_camera":"Slave (Góc phụ)","master_confidence":0.3668563172359427,"slave_confidence":0.5801504215955902,"message":"Xác thực thành công (Slave (Góc phụ)): duy (Độ tin cậy: 0.580 >= 0.28) [Master: 0.367, Slave: 0.580]"}[0m
+[0;32mI (167067) MASTER_ESP32S3: =================================================[0m
+[0;32mI (167077) MASTER_ESP32S3: >>> [XÁC THỰC THÀNH CÔNG] - duy (58.0%) <<<[0m
+[0;32mI (167077) MASTER_ESP32S3: >>> [RELAY]: BẬT RELAY (GPIO 1) -> ĐÃ MỞ CỬA! <<<[0m
+[0;32mI (167087) MASTER_ESP32S3: =================================================[0m
+[0;32mI (168057) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m
+[0;32mI (170107) MASTER_ESP32S3: >>> [RELAY]: TẮT RELAY -> ĐÃ ĐÓNG/KHÓA CỬA LẠI! <<<[0m
+[0;32mI (178307) MASTER_ESP32S3: [HEARTBEAT] Master ONLINE[0m

@@ -1,0 +1,43 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 D:\Dự án esp32\smart_dual_camera_access_idf2\master_esp32s3
+Traceback (most recent call last):
+  File "C:\Espressif\frameworks\esp-idf-v5.5\tools\kconfig_new\prepare_kconfig_files.py", line 102, in <module>
+    main()
+  File "C:\Espressif\frameworks\esp-idf-v5.5\tools\kconfig_new\prepare_kconfig_files.py", line 98, in main
+    _prepare_source_files(env, list_separator)
+  File "C:\Espressif\frameworks\esp-idf-v5.5\tools\kconfig_new\prepare_kconfig_files.py", line 64, in _prepare_source_files
+    _write_source_file(env_dict['COMPONENT_KCONFIGS'], env_dict['COMPONENT_KCONFIGS_SOURCE_FILE'])
+  File "C:\Espressif\frameworks\esp-idf-v5.5\tools\kconfig_new\prepare_kconfig_files.py", line 60, in _write_source_file
+    with open(config_file, 'w', encoding='utf-8') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/Dß╗▒ ├ín esp32/smart_dual_camera_access_idf2/master_esp32s3/build/kconfigs.in'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\kconfgen\__main__.py", line 18, in <module>
+    main()
+  File "C:\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\kconfgen\core.py", line 646, in main
+    config = kconfiglib.Kconfig(args.kconfig, parser_version=parser_version)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\kconfiglib\core.py", line 921, in __init__
+    self()
+  File "C:\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\kconfiglib\core.py", line 935, in __call__
+    prev = self._parse_block(None, self.top_node, self.top_node)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Espressif\python_env\idf5.5_py3.11_env\Lib\site-packages\kconfiglib\core.py", line 2746, in _parse_block
+    raise KconfigError(
+kconfiglib.core.KconfigError: C:/Espressif/frameworks/esp-idf-v5.5/Kconfig:336: 'D:/Dß╗▒ ├ín esp32/smart_dual_camera_access_idf2/master_esp32s3/build/kconfigs_projbuild.in' not found (in 'source "$COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE"'). Check that environment variables are set correctly (e.g. $srctree, which is unset or blank). Also note that unset environment variables expand to the empty string.
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.5/tools/cmake/kconfig.cmake:219 (message):
+  Failed to run kconfgen
+  (C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;-m;kconfgen;--list-separator=semicolon;--kconfig;C:/Espressif/frameworks/esp-idf-v5.5/Kconfig;--sdkconfig-rename;C:/Espressif/frameworks/esp-idf-v5.5/sdkconfig.rename;--config;D:/Dự
+  án
+  esp32/smart_dual_camera_access_idf2/master_esp32s3/sdkconfig;--defaults;D:/Dự
+  án
+  esp32/smart_dual_camera_access_idf2/master_esp32s3/sdkconfig.defaults;--env;IDF_MINIMAL_BUILD=n;--env-file;D:/Dự
+  án esp32/smart_dual_camera_access_idf2/master_esp32s3/build/config.env).
+  Error 1
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.5/tools/cmake/build.cmake:704 (__kconfig_generate_config)
+  C:/Espressif/frameworks/esp-idf-v5.5/tools/cmake/project.cmake:740 (idf_build_process)
+  CMakeLists.txt:3 (project)
+
+

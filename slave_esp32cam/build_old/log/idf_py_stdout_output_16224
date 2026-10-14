@@ -1,0 +1,148 @@
+Command: C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe C:\esp\v6.1\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\ACER\.gemini\antigravity-ide\smart_dual_camera_access_idf2\slave_esp32cam\build\slave_esp32cam.elf C:\Users\ACER\.gemini\antigravity-ide\smart_dual_camera_access_idf2\slave_esp32cam\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.1\venv\Scripts\python.exe' 'C:\esp\v6.1\esp-idf\tools\idf.py' '-p' 'COM5'
+ets Jul 29 2019 12�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0040,len:6272
+load:0x40078000,len:15784
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep 25 2026 08:21:53[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (31) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3a1fch (238076) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=0004a224 vaddr=3ffb0000 size=05df4h ( 24052) load[0m
+[0;32mI (165) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=be6cch (779980) map[0m
+[0;32mI (396) esp_image: segment 3: paddr=0010e6f4 vaddr=3ffb5df4 size=01064h (  4196) load[0m
+[0;32mI (398) esp_image: segment 4: paddr=0010f760 vaddr=40080000 size=19a24h (104996) load[0m
+[0;32mI (437) esp_image: segment 5: paddr=0012918c vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (451) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (451) boot: Disabling RNG early entropy source...[0m
+[0;32mI (461) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (462) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (462) esp_psram: Speed: 40MHz[0m
+[0;32mI (462) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (468) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (477) cpu_start: Multicore app[0m
+[0;32mI (1384) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1391) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (1392) cpu_start: Pro cpu start user code[0m
+[0;32mI (1392) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1394) app_init: Application information:[0m
+[0;32mI (1398) app_init: Project name:     slave_esp32cam[0m
+[0;32mI (1402) app_init: App version:      1[0m
+[0;32mI (1406) app_init: Compile time:     Sep 25 2026 08:21:35[0m
+[0;32mI (1411) app_init: ELF file SHA256:  f3a5f5459...[0m
+[0;32mI (1415) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (1419) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1423) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1427) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1431) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1437) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1443) heap_init: At 3FFBC958 len 000236A8 (141 KiB): DRAM[0m
+[0;32mI (1448) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1453) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1459) heap_init: At 40099A24 len 000065DC (25 KiB): IRAM[0m
+[0;32mI (1465) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;33mW (1472) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (1484) spi_flash: detected chip: generic[0m
+[0;32mI (1488) spi_flash: flash io: dio[0m
+[0;32mI (1492) main_task: Started on CPU0[0m
+[0;32mI (1492) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1502) main_task: Calling app_main()[0m
+[0;32mI (1532) SLAVE_ESP32CAM: Khởi động Slave ESP32-CAM...[0m
+[0;32mI (1532) cam_hal: cam init ok[0m
+[0;32mI (1532) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1532) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1572) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (1572) camera: Detected OV3660 camera[0m
+[0;32mI (1572) camera: Detected camera at address=0x3c[0m
+[0;32mI (1882) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1882) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 23[0m
+[0;32mI (1882) cam_hal: Allocating 96000 Byte frame buffer in PSRAM[0m
+[0;32mI (1882) cam_hal: cam config ok[0m
+[0;32mI (1902) ov3660: Calculated VCO: 200000000 Hz, PLLCLK: 200000000 Hz, SYSCLK: 50000000 Hz, PCLK: 10000000 Hz[0m
+[0;32mI (1942) SLAVE_ESP32CAM: Camera da khoi tao va toi uu[0m
+[0;32mI (1952) wifi:wifi driver task: 3ffc671c, prio:23, stack:6656, core=0[0m
+[0;32mI (1962) wifi:wifi firmware version: e12a754[0m
+[0;32mI (1962) wifi:wifi certification version: v7.0[0m
+[0;32mI (1962) wifi:config NVS flash: enabled[0m
+[0;32mI (1962) wifi:config nano formatting: disabled[0m
+[0;32mI (1962) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1972) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1972) wifi:Init management short buffer num: 32[0m
+[0;32mI (1982) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1982) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1992) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1992) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (2002) wifi_init: rx ba win: 6[0m
+[0;32mI (2002) wifi_init: accept mbox: 6[0m
+[0;32mI (2002) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2002) wifi_init: udp mbox: 6[0m
+[0;32mI (2012) wifi_init: tcp mbox: 6[0m
+[0;32mI (2012) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2012) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2022) wifi_init: tcp mss: 1440[0m
+[0;32mI (2022) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2022) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (2032) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (2042) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (2112) wifi:mode : sta (b0:cb:d8:c0:7d:04)[0m
+[0;32mI (2112) wifi:enable tsf[0m
+[0;32mI (2122) SLAVE_ESP32CAM: Đang bắt đầu kết nối tới SSID: Minh Thai ...[0m
+[0;32mI (2122) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (2122) main_task: Returned from app_main()[0m
+[0;33mW (4532) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (7942) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (11352) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (14762) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (18172) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (21582) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (24992) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (28402) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (31812) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (35222) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (38632) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (42042) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (45452) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (48862) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (52272) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (55682) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (59092) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (62502) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (65912) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (69322) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (72732) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (76142) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (79552) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (82962) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (86372) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (89782) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (93192) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (96602) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (100012) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (103422) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (106832) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (110242) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (113652) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (117062) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (120472) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (123882) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (127292) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (130702) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (134112) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
+[0;33mW (137522) SLAVE_ESP32CAM: WiFi mất kết nối! Mã lỗi lý do (Reason Code): 201[0m
